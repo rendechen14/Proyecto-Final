@@ -4,11 +4,22 @@ site_author: Equip B 1er ASIX
 
 theme:
   name: material
-  language: ca
-  features:
+  language: ca   
+  features:         #Un par de chorradas que he encontrado por ahi que podrian quedar
   - content.code.copy
   - navigation.tabs
-
+  
+  palette:          #Una paleta idk que dechir la veia guapa
+    - scheme: default
+      primary: blue
+      accent: indigo
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+  
 nav:
   - Inici: index.md
   - Configuració: servidors.md
