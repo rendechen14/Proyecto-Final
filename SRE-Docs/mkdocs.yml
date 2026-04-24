@@ -1,6 +1,7 @@
 site_name: SRE-Docs
 site_description: Documentació i desplegament de servidors
 site_author: Equip ASIX
+site_url: https://rendechen14.github.io/Proyecto-Final/
 
 theme:
   name: material
