@@ -24,8 +24,11 @@ L'usuari `admin-web` està destinat a la gestió del servidor web i dels fitxers
 - Supervisar configuracions bàsiques del servei web
 
 ### Exemple de creació
+
+```
 sudo adduser admin-web
 sudo usermod -aG www-data admin-web
+```
 
 ## Usuari db-backup
 L'usuari `db-backup` està destinat a la realització de còpies de seguretat de la base de dades.
@@ -37,7 +40,10 @@ L'usuari `db-backup` està destinat a la realització de còpies de seguretat de
 - No modificar la configuració del servidor web
 
 ### Exemple de creació
+
+```
 sudo adduser db-backup
+```
 
 ## Usuari auditor
 L'usuari `auditor` s'utilitza per a tasques de revisió i supervisió del sistema.

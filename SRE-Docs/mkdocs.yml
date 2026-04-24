@@ -9,17 +9,19 @@ theme:
   - content.code.copy
   - navigation.tabs
   
-  palette:          #Una paleta idk que dechir la veia guapa
+  palette:          #Una paleta que he hecho inspirado en https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
     - scheme: default
-      primary: blue
-      accent: indigo
-    - scheme: slate
-      primary: blue
-      accent: indigo
       toggle:
-        icon: material/weather-night
-        name: Modo oscuro
-  
+        icon: material/brightness-7 
+      primary: light blue
+      accent: cyan
+
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+      primary: blue
+      accent: light blue
+
 nav:
   - Inici: index.md
   - Configuració: servidors.md
