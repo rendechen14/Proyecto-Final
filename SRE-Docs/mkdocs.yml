@@ -1,10 +1,13 @@
-site_name: SRE-Docs
+site_name: Documentació i Desplegament de Servidors
 site_description: Documentació i desplegament de servidors
-site_author: Equip ASIX
+site_author: Equip B 1er ASIX
 
 theme:
   name: material
   language: ca
+  features:
+  - content.code.copy
+  - navigation.tabs
 
 nav:
   - Inici: index.md

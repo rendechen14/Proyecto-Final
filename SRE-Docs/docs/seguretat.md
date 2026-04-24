@@ -24,12 +24,14 @@ PermitRootLogin no
 ## Configuració del tallafocs amb UFW
 S'ha configurat un firewall per a permetre únicament els ports necessaris per al funcionament del servidor.
 
+```
 sudo apt install ufw -y
 sudo ufw allow 2222/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 sudo ufw enable
 sudo ufw status
+```
 
 ## Actualització del sistema
 Es manté el sistema actualitzat per a corregir vulnerabilitats i aplicar millores de seguretat:
@@ -41,15 +43,21 @@ sudo apt upgrade -y
 S'han previst còpies de seguretat periòdiques per a protegir la informació crítica del sistema i de la base de dades.
 
 ### Exemple de còpia de seguretat
+
+```
 mysqldump -u root -p basededades > copia.sql
+```
 
 ## Revisió de logs
 La revisió periòdica de registres permet detectar accessos sospitosos, errors de servei i possibles incidències de seguretat.
 
 ### Exemples de consulta
+
+```
 sudo cat /var/log/auth.log
 sudo cat /var/log/apache2/access.log
 sudo cat /var/log/apache2/error.log
+```
 
 ## Conclusions
 Les mesures aplicades milloren la protecció del servidor, limiten la superfície d'exposició i faciliten la supervisió del sistema en entorns corporatius.
